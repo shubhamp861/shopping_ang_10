@@ -8,15 +8,20 @@ import { OrdersummaryComponent } from './component/ordersummary/ordersummary.com
 import { ProfileComponent } from './component/profile/profile.component';
 import { LoginComponent } from './component/login/login.component';
 import { Menugaurd } from './component/gaurd/menugaurd.component';
+import { ErrorpageComponent } from './component/errorpage/errorpage.component';
+import { NetworkdebuggComponent } from './component/networkdebugg/networkdebugg.component';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},
-  {path:"menu",component:MenuComponent,canActivate:[Menugaurd]},
+  {path:"menu",component:MenuComponent},
   {path:"cart",component:CartComponent},
   {path:"checkout/:productList",component:CheckoutComponent},
   {path:"orderconfirm",component:ConfirmOrderComponent},
   {path:"manageorder",component:OrdersummaryComponent},
-  {path:"profile",component:ProfileComponent}
+  {path:"profile",component:ProfileComponent},
+  {path:"network",component:NetworkdebuggComponent},
+  {path:'**',component:ErrorpageComponent},
+ 
 ];
 
 @NgModule({

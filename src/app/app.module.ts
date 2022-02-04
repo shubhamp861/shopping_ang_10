@@ -17,6 +17,9 @@ import { ProfileComponent } from './component/profile/profile.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './component/login/login.component';
 import { Menugaurd } from './component/gaurd/menugaurd.component';
+import {  SocialAuthServiceConfig, GoogleLoginProvider, FacebookLoginProvider, SocialLoginModule } from 'angularx-social-login';
+import { ErrorpageComponent } from './component/errorpage/errorpage.component';
+import { NetworkdebuggComponent } from './component/networkdebugg/networkdebugg.component';
 
 
 @NgModule({
@@ -33,15 +36,39 @@ import { Menugaurd } from './component/gaurd/menugaurd.component';
     ConfirmOrderComponent,
     OrdersummaryComponent,
     ProfileComponent,
-    LoginComponent
+    LoginComponent,
+    ErrorpageComponent,
+    NetworkdebuggComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SocialLoginModule
   ],
-  providers: [Menugaurd],
+  providers: [Menugaurd,
+    {
+      provide: 'SocialAuthServiceConfig',
+      useValue: {
+        autoLogin: false,
+        providers: [
+          {
+            id: GoogleLoginProvider.PROVIDER_ID,
+            provider: new GoogleLoginProvider(
+              "627818141722-9s5gdqtvi70tn2o8fv77bc98ibv8ru81.apps.googleusercontent.com"
+            )
+          },
+          {
+            id: FacebookLoginProvider.PROVIDER_ID,
+            provider: new FacebookLoginProvider(
+              "644878710163974"
+              )
+          }
+        ]
+      } as SocialAuthServiceConfig,
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

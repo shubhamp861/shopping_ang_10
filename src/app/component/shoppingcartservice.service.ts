@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
+import { Subject, interval } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
@@ -16,7 +16,11 @@ export class ShoppingcartserviceService {
   >();
 
   refreshShopingList = [];
-  loggedUser = new Subject<{name:any,pass:string,status:string}>();
+  loggedUser = new Subject<{name:any,status:string,firstName:string,
+    lastName:string,
+    photoUrl:string,
+    idToken:string,
+    authToken:string}>();
 
   constructor(private httpClient: HttpClient) { 
     this.finalShoppingCart.subscribe(val=>{

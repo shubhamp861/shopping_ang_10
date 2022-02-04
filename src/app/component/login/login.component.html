@@ -18,13 +18,19 @@
           SIGN IN
         </h1>
       </div>
-      <img src="assets/Images/google.png" />
-      <img src="assets/Images/facebook.png" />
+      <!-- <img src="assets/Images/google.png" (click)="signInGoogleHandler()"/> -->
+     <a class="text-gray-500" (click)="signInGoogleHandler()">
+      <svg height="40px" id="Layer_1" style="enable-background:new 0 0 56.6934 56.6934; margin: 10px;" version="1.1" viewBox="0 0 56.6934 56.6934" width="56.6934px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.4597,4.0154c-13.6006,0-24.625,11.0273-24.625,24.625c0,13.5996,11.0244,24.623,24.625,24.623  c13.5996,0,24.625-11.0234,24.625-24.623C53.0847,15.0426,42.0593,4.0154,28.4597,4.0154z M42.6077,33.8793  c-0.6971,2.4016-2.0137,4.6364-3.8595,6.3326c-1.7462,1.6122-3.9333,2.7168-6.2449,3.2488  c-2.5577,0.5821-5.2626,0.5976-7.8036-0.084c-2.0137-0.5356-3.9131-1.4954-5.5425-2.7948  c-1.7272-1.3727-3.1511-3.1237-4.1442-5.0933c-1.5282-3.0176-1.9982-6.5501-1.3239-9.8632  c0.2681-1.3298,0.7144-2.6226,1.3256-3.8339c1.7558-3.5151,4.9224-6.2962,8.6412-7.5694c3.3-1.1421,6.9968-1.1165,10.2748,0.09  c1.8207,0.6685,3.4871,1.726,4.9086,3.0414c-0.4755,0.5165-0.9914,0.9974-1.4823,1.5002c-0.936,0.9342-1.869,1.8719-2.8068,2.8043  c-0.9276-0.8859-2.0602-1.5591-3.2887-1.9321c-1.4454-0.4373-3.0021-0.4975-4.4785-0.1823  c-1.7242,0.3694-3.3245,1.2702-4.5554,2.5303c-0.9979,1.0104-1.7576,2.252-2.2139,3.5961c-0.6577,1.9071-0.653,4.0311-0.003,5.9399  c0.6357,1.8767,1.8737,3.5443,3.496,4.684c1.0146,0.7155,2.1776,1.2231,3.396,1.4662c1.1981,0.2425,2.4391,0.2163,3.6402,0.0114  c1.1934-0.2091,2.351-0.6488,3.3584-1.3262c1.6027-1.0706,2.7328-2.8097,3.054-4.7114c-2.7704-0.0012-5.5414-0.0006-8.3124,0  c-0.0035-1.9839-0.0005-3.9685-0.0012-5.953c4.7847-0.0006,9.5694-0.0018,14.3541,0.0005  C43.4728,28.4631,43.3679,31.2596,42.6077,33.8793z"/></svg>
+     </a>
+      <a class="text-gray-500" (click)="signInFacebookHandler()">
+        <svg style="margin: 15px;" enable-background="new 0 0 32 32" height="32px" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="facebook_logo"><g><path d="M15.5,30h-11C3.122,30,2,28.879,2,27.5V8c0-0.276,0.224-0.5,0.5-0.5S3,7.724,3,8v19.5    C3,28.327,3.673,29,4.5,29h11c0.276,0,0.5,0.224,0.5,0.5S15.776,30,15.5,30z" fill="#263238"/><path d="M27.5,30h-6c-0.276,0-0.5-0.224-0.5-0.5v-10c0-0.276,0.224-0.5,0.5-0.5h3.059l0.375-3H21.5    c-0.276,0-0.5-0.224-0.5-0.5v-4c0-0.827,0.673-1.5,1.5-1.5H25V7h-3.5C19.57,7,18,8.57,18,10.5v5c0,0.276-0.224,0.5-0.5,0.5H14v3    h3.5c0.276,0,0.5,0.224,0.5,0.5v10c0,0.276-0.224,0.5-0.5,0.5S17,29.776,17,29.5V20h-3.5c-0.276,0-0.5-0.224-0.5-0.5v-4    c0-0.276,0.224-0.5,0.5-0.5H17v-4.5C17,8.019,19.019,6,21.5,6h4C25.776,6,26,6.224,26,6.5v4c0,0.276-0.224,0.5-0.5,0.5h-3    c-0.276,0-0.5,0.225-0.5,0.5V15h3.5c0.144,0,0.28,0.062,0.375,0.169c0.095,0.107,0.139,0.251,0.121,0.394l-0.5,4    C25.465,19.813,25.252,20,25,20h-3v9h5.5c0.827,0,1.5-0.673,1.5-1.5v-23C29,3.673,28.327,3,27.5,3h-23C3.673,3,3,3.673,3,4.5v1    C3,5.776,2.776,6,2.5,6S2,5.776,2,5.5v-1C2,3.121,3.122,2,4.5,2h23C28.878,2,30,3.121,30,4.5v23C30,28.879,28.878,30,27.5,30z" fill="#263238"/></g></g></svg>
+      </a>
+      <!-- <img src="assets/Images/facebook.png" (click)="signInFacebookHandler()"/> -->
     </div>
     <div id="inputbtn" style="margin: 24px;">
       <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-        <input class="form-control" [ngStyle]="{'border': (isSubmitName) ? '2px solid red':'2px solid blue'}" style="margin-bottom: 16px;" id="exampleInputEmail1" placeholder="Username" autocomplete="off" formControlName="name">
-        <input class="form-control" [ngStyle]="{'border': (isSubmitPass) ? '2px solid red':'2px solid blue'}" style="margin-bottom: 16px;" id="exampleInputEmail1" placeholder="Password" autocomplete="off" formControlName="pass">
+        <input class="form-control" [ngStyle]="{'border': (isSubmitName) ? '2px solid red':'1px solid rgba(0,132,189,0.59);'}" style="margin-bottom: 16px;" id="exampleInputEmail1" placeholder="Username" autocomplete="off" formControlName="name">
+        <input class="form-control" [ngStyle]="{'border': (isSubmitPass) ? '2px solid red':'1px solid rgba(0,132,189,0.59);'}" style="margin-bottom: 16px;" id="exampleInputEmail1" placeholder="Password" autocomplete="off" formControlName="pass">
         <button class="btn btn-primary">Submit</button>
       </form>
     </div>

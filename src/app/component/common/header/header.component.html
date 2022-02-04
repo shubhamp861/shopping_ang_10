@@ -10,7 +10,9 @@
       <app-cart-count></app-cart-count>
     </div>
   </div>
-  <div class="dropdown" style="margin: 12px; font-size: 12px">
+  <div class="dropdown" style="margin: 12px; font-size: 12px;display: flex;">
+    <div class="status" [ngStyle]="{'background-color': (isActive)? 'teal':'red'}">
+    </div>
     <a
       class="dropdown-toggle"
       type="button"
@@ -30,7 +32,8 @@
     >
       <a class="dropdown-item" routerLink="/profile">My Profile</a>
       <a class="dropdown-item" routerLink="/manageorder">manage Order</a>
-      <a class="dropdown-item" routerLink="/sign">Log Out</a>
+      <!-- <a class="dropdown-item" routerLink="/network">Debug Network</a> -->
+      <a class="dropdown-item" (click)="signOut()" >Log Out</a>
     </div>
   </div>
 </div>
