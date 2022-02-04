@@ -1,0 +1,12 @@
+#menuDiv{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    width: 95%;
+}
+#menuLeft{
+    width: 20%;
+}
+#menuRight{
+    width: 75%;
+}

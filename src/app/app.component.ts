@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component,VERSION } from '@angular/core';
+import { ShoppingcartserviceService } from './component/shoppingcartservice.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ahop';
+  title = 'shoopingCart';
+  isUser=false;
+  loggedUser;
+  constructor(private service:ShoppingcartserviceService){
+    console.log(VERSION.full);
+     this.service.loggedUser.subscribe(value=>{
+       this.isUser=true;
+       this.loggedUser=value;
+     })
+  }
 }

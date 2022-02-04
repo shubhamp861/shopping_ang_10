@@ -1,0 +1,36 @@
+<div id="header" *ngIf="isLogged.name">
+  <div id="headerIcon" class="commonFlex">
+    <div id="leafIcon">
+      <img routerLink="/menu" src="assets/icon/leafIcon.png" />
+    </div>
+    <div id="cartIcon">
+      <img routerLink="/cart" src="assets/icon/cartIcon.png" />
+    </div>
+    <div id="cartCount">
+      <app-cart-count></app-cart-count>
+    </div>
+  </div>
+  <div class="dropdown" style="margin: 12px; font-size: 12px">
+    <a
+      class="dropdown-toggle"
+      type="button"
+      id="dropdownMenuButton"
+      data-toggle="dropdown"
+      aria-haspopup="true"
+      aria-expanded="false"
+    >
+      {{isLogged.name}}
+    </a>
+    <div
+      class="dropdown-menu"
+      aria-labelledby="dropdownMenuButton"
+      style="
+        top: 3px;
+        left: -41px;"
+    >
+      <a class="dropdown-item" routerLink="/profile">My Profile</a>
+      <a class="dropdown-item" routerLink="/manageorder">manage Order</a>
+      <a class="dropdown-item" routerLink="/sign">Log Out</a>
+    </div>
+  </div>
+</div>

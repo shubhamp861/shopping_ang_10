@@ -1,0 +1,7 @@
+
+<div  id="menu_list">
+    <div class="list-group">
+        <a id="menu_list_header" class="list-group-item list-group-item-action active"  (click)="getFilterProduct('all')"> All Categories</a>
+        <a *ngFor="let list of menu_list" class="list-group-item list-group-item-action"  (click)="getFilterProduct(list)">{{list}}</a>
+      </div>
+</div>

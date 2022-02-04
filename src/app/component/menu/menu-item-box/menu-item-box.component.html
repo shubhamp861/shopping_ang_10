@@ -1,0 +1,16 @@
+
+<div id="item_box">
+    <div *ngFor = "let product of products" class="item">
+        <img [src]='product.path'>
+        <h1> {{product.name}}</h1>
+        <h2><span>$</span>{{product.price}}</h2>
+        <button *ngIf="!product.isAdd; else restBtm" id="btnAddCart" type="button" class="btn btn-secondary" (click)="addToCard(product.id)">ADD TO CARD</button>
+        <ng-template #restBtm>
+            <div id="btnmain">
+                <button type="button" class="btn btn-secondary btnc"  (click)="addToCardAction(product.id,'add')">+</button>
+                <div id="blank">{{getCount(product.id)}} in cart</div>
+                <button type="button" class="btn btn-secondary btnc"  (click)="addToCardAction(product.id,'sub')">-</button>
+            </div>
+        </ng-template>
+    </div>
+</div>

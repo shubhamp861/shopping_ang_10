@@ -1,0 +1,14 @@
+#mainDiv{
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 8px -2px rgba(0,0,0,0.75);
+}
+.listflex{
+    display: flex;
+    justify-content: space-between;
+}
+.listflex div{
+    margin: 10px;
+}

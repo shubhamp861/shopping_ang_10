@@ -1,0 +1,182 @@
+[
+  {
+    "id": 100,
+    "name": "Peas",
+    "path": "assets/Images/Peas.jpg",
+    "type": "vegetables",
+    "price": 2.68,
+    "isAdd": false,
+    "qty": 0,"cartprice":0
+  },
+  {
+    "id": 101,
+    "name": "Capsicum",
+    "path": "assets/Images/Capsicum.jpg",
+    "type": "vegetables",
+    "price": 1.47,
+    "isAdd": false,
+    "qty": 0,"cartprice":0
+  },
+  {
+    "id": 102,
+    "name": "Carrot",
+    "path": "assets/Images/Carrot.jpg",
+    "type": "vegetables",
+    "price": 3.0,
+    "isAdd": false,
+    "qty": 0,"cartprice":0
+  },
+  {
+    "id": 103,
+    "name": "Garlic",
+    "path": "assets/Images/Garlic.jpg",
+    "type": "vegetables",
+    "price": 0.68,
+    "isAdd": false,
+    "qty": 0,"cartprice":0
+  },
+  {
+    "id": 104,
+    "name": "Tomato",
+    "path": "assets/Images/Tomato.jpg",
+    "type": "vegetables",
+    "price": 4.01,
+    "isAdd": false,
+    "qty": 0,"cartprice":0
+  },
+  {
+    "id": 105,
+    "name": "Cauliflower",
+    "path": "assets/Images/Cauliflower.jpg",
+    "type": "vegetables",
+    "price": 1.85,
+    "isAdd": false,
+    "qty": 0,"cartprice":0
+  },
+  {
+    "id": 106,
+    "name": "Bread",
+    "path": "assets/Images/Bread_01.jpg",
+    "type": "Bread",
+    "price": 1.85,
+    "isAdd": false,
+    "qty": 0,"cartprice":0
+  },
+  {
+    "id": 107,
+    "name": "Pita Bread",
+    "path": "assets/Images/Bread_02.jpg",
+    "type": "Bread",
+    "price": 1.85,
+    "isAdd": false,
+    "qty": 0,"cartprice":0
+  },
+  {
+    "id": 108,
+    "name": "Focaccia",
+    "path": "assets/Images/Bread_03.jpg",
+    "type": "Bread",
+    "price": 1.85,
+    "isAdd": false,
+    "qty": 0,"cartprice":0
+  },
+  {
+    "id": 109,
+    "name": "Multigrain",
+    "path": "assets/Images/Bread_04.jpg",
+    "type": "Bread",
+    "price": 1.85,
+    "isAdd": false,
+    "qty": 0,"cartprice":0
+  },
+  {
+    "id": 110,
+    "name": "Milk",
+    "path": "assets/Images/Milk.jpg",
+    "type": "Dairy",
+    "price": 1.85,
+    "isAdd": false,
+    "qty": 0,"cartprice":0
+  },
+  {
+    "id": 111,
+    "name": "Oats",
+    "path": "assets/Images/Oats.jpg",
+    "type": "Dairy",
+    "price": 1.85,
+    "isAdd": false,
+    "qty": 0,"cartprice":0
+  },
+  {
+    "id": 112,
+    "name": "Biscuit",
+    "path": "assets/Images/Biscuit.jpg",
+    "type": "Dairy",
+    "price": 1.85,
+    "isAdd": false,
+    "qty": 0,"cartprice":0
+  },
+  {
+    "id": 113,
+    "name": "Egg",
+    "path": "assets/Images/Egg.jpg",
+    "type": "Dairy",
+    "price": 1.85,
+    "isAdd": false,
+    "qty": 0,"cartprice":0
+  },
+  {
+    "id": 114,
+    "name": "Pineapple",
+    "path": "assets/Images/Pineapple.jpg",
+    "type": "Fruits",
+    "price": 1.85,
+    "isAdd": false,
+    "qty": 0,"cartprice":0
+  },
+  {
+    "id": 115,
+    "name": "Orange",
+    "path": "assets/Images/Orange.jpg",
+    "type": "Fruits",
+    "price": 1.85,
+    "isAdd": false,
+    "qty": 0,"cartprice":0
+  },
+  {
+    "id": 116,
+    "name": "Grape",
+    "path": "assets/Images/Grape.jpg",
+    "type": "Fruits",
+    "price": 1.85,
+    "isAdd": false,
+    "qty": 0,"cartprice":0
+  },
+  {
+    "id": 117,
+    "name": "Kiwi",
+    "path": "assets/Images/Kiwi.jpg",
+    "type": "Fruits",
+    "price": 1.85,
+    "isAdd": false,
+    "qty": 0,"cartprice":0
+  },
+  {
+    "id": 118,
+    "name": "Red",
+    "path": "assets/Images/Red.jpg",
+    "type": "Spices",
+    "price": 1.85,
+    "isAdd": false,
+    "qty": 0,"cartprice":0
+  },
+  {
+    "id": 119,
+    "name": "Turmeric",
+    "path": "assets/Images/Turmeric.jpg",
+    "type": "Spices",
+    "price": 1.85,
+    "isAdd": false,
+    "qty": 0,"cartprice":0
+  }
+]

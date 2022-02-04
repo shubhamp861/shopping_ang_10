@@ -1,0 +1,44 @@
+<div class="cart">
+  <p>SHOPPING CART</p>
+  <div id="cart_div">
+    <div id="cart_clear">
+      <a *ngIf="message" style="color: tomato;">{{message}}</a>
+      <a *ngIf="!message">You have {{ shoppingCart.length }} item in your cart..</a>
+      <button style="margin: 10px" class="btn btn-danger" (click)="cartCLear()">
+        Clear
+      </button>
+    </div>
+    <div id="cart_header">
+      <h2></h2>
+      <h2>Product</h2>
+      <h2 style="margin-right: 86px;
+      box-sizing: border-box;">Quantity</h2>
+      <h2>Price</h2>
+    </div>
+
+    <div *ngFor="let item of shoppingCart" id="table_div">
+      <div class="divELE">
+        <img style="margin-left: 52px" [src]="item.path" />
+      </div>
+      <div class="divELE">
+        <div style="margin-left: 51px;">{{ item.name }}</div>
+      </div>
+      <div id="btnmain" class="divELE">
+     
+          <button type="button" class="btnc" (click)="action('add',item.id)">+</button>
+          <div id="blank">{{ item.qty }}</div>
+          <button type="button" class="btnc" (click)="action('sub',item.id)">-</button>
+      
+      </div>
+      <div class="divELE">
+        <div style="margin-left: 120px;"><span>$</span>{{ item.price }}</div>
+      </div>
+    </div>
+    <div id="total_div">
+      <button class="btn" style="background-color: teal" (click)="navigate()">
+        Check Out
+      </button>
+      <div ><span>$</span>{{ total }}</div>
+    </div>
+  </div>
+</div>
